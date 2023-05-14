@@ -1,6 +1,6 @@
 from django.urls import path
-from posts.views import PostListView
 
+from posts.views import PostListView
 
 from .views import (
     AboutPageView,
