@@ -57,7 +57,7 @@ homepage = ""
 repository = "https://github.com/kevinbowen777/django-api-blog.git"
 documentation = "file: README.rst"
 
-keywords = ["django", "web-application", "template"]
+keywords = ["api", "blog", "django", "djangorestframework", "web-application"]
 
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
