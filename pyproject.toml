@@ -42,7 +42,7 @@ show_missing = true
 
 [tool.poetry]
 name = "django-api-blog"
-version = "0.1.0"
+version = "0.2.0"
 description = "A Django REST Framework(DRF) sandbox"
 authors = [
     "Kevin Bowen <kevin.bowen@gmail.com>",
