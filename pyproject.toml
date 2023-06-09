@@ -80,7 +80,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Django = "4.2.1"
+Django = "4.2.2"
 
 djangorestframework = "^3.13.1"
 dj-rest-auth = "^3.0.0"
@@ -121,7 +121,7 @@ pip-check = "^2.7"
 pip-audit = "^2.5"
 Sphinx = "6.2.1"
 sphinx-rtd-theme = "^1.2.0"
-ruff = "^0.0.270"
+ruff = "^0.0.272"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
