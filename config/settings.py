@@ -1,4 +1,4 @@
-"""Settings for the django_api project."""
+"""Settings for the django-api-blog project."""
 from pathlib import Path
 
 # import socket  # noqa: E402 # Comment out if not using debug_toolbar
