@@ -122,6 +122,7 @@ sphinx-rtd-theme = "^1.2.0"
 ruff = ">= 0.0.275, < 0.0.300"
 werkzeug = "^2.3.6"
 pyopenssl = "^23.2.0"
+djlint = "^1.31.1"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
