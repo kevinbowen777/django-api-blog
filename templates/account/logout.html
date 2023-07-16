@@ -1,8 +1,9 @@
-<!-- templates/account/logout.html -->
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
 
-{% block title %}Log Out{% endblock title %}
+{% block title %}
+  Log Out
+{% endblock title %}
 
 {% block content %}
 <div class="container">
@@ -15,7 +16,6 @@
       <button class="btn btn-danger" type="submit">Log Out</button>
       <a class="btn btn-info" href="#" onclick="window.history.back()">Cancel</a>
     </form>
-    </p>
   </p>
 </div>
 {% endblock content %}
