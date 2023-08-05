@@ -96,18 +96,22 @@ exclude = '''
 )/
 '''
 
-[tool.coverage.paths]
-source = ["accounts", "config", "pages", "posts"]
+# [tool.coverage.paths]
+# source = ["accounts", "config", "pages", "posts"]
 
 [tool.coverage.run]
 branch = true
-source = ["config"]
+dynamic_context = "test_function"
+source = ["accounts", "config", "pages", "posts", ]
+# source = ["config"]
 omit = [
-    "*conftest.py",
-    "*manage.py",
-    "*settings*.py",
+    "conftest.py",
+    "manage.py",
+    "settings*.py",
     "*test.py",
-    "*wsgi.py",
+    "asgi.py",
+    "wsgi.py",
+    "gunicorn.py",
     "*/__init__.py",
     "*/migrations/*",
     "*/factories.py",
