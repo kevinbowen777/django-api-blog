@@ -96,14 +96,10 @@ exclude = '''
 )/
 '''
 
-# [tool.coverage.paths]
-# source = ["accounts", "config", "pages", "posts"]
-
 [tool.coverage.run]
 branch = true
 dynamic_context = "test_function"
 source = ["accounts", "config", "pages", "posts", ]
-# source = ["config"]
 omit = [
     "conftest.py",
     "manage.py",
