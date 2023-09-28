@@ -29,21 +29,21 @@ INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
     "django.contrib.sites",
-    # 3rd-party apps
-    # "debug_toolbar",
-    "django_extensions",
-    "rest_framework",
-    "rest_framework.authtoken",
+    # third-party apps
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
     "allauth.socialaccount.providers.github",
+    "crispy_forms",
+    "crispy_bootstrap4",
+    # "debug_toolbar",
+    "django_countries",
+    "django_extensions",
     "dj_rest_auth",
     "dj_rest_auth.registration",
     "drf_yasg",
-    "crispy_forms",
-    "crispy_bootstrap4",
-    "django_countries",
+    "rest_framework",
+    "rest_framework.authtoken",
     # Local
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
@@ -51,6 +51,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "allauth.account.middleware.AccountMiddleware",
     "django.middleware.common.BrokenLinkEmailsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -182,6 +183,20 @@ ACCOUNT_EMAIL_REQUIRED = False
 ACCOUNT_EMAIL_VERIFICATION = "optional"
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+SOCIALACCOUNT_PROVIDERS = {
+    "github": {
+        # For each OAuth based provider, either add a ``SocialApp``
+        # (``socialaccount`` app) containing the required client
+        # credentials, or list them here:
+        # "VERIFIED_EMAIL": True
+        "APP": {
+            "client_id": env.str("GITHUB_SOCIALACCOUNT_APP_CLIENT_ID"),
+            "secret": env.str("GITHUB_SOCIALACCOUNT_APP_SECRET"),
+            "key": "",
+        },
+    }
+}
 
 # third-party email relay configuration
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

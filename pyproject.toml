@@ -40,8 +40,8 @@ python = "^3.10"
 Django = "4.2.5"
 
 djangorestframework = "^3.13.1"
-dj-rest-auth = "^4.0"
-django-allauth = "^0.54.0"
+dj-rest-auth = "^5.0"
+django-allauth = ">=0.54.0, < 0.60.0"
 environs = { version = "^9.5.0", extras = ["django"] }
 django-extensions = "^3.2"
 PyYAML = "^6.0"
