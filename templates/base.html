@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="keywords" content="Django REST Framework, DRF, blog" />
     <meta name="description"
           content="A blog API built with Django REST Framework" />
@@ -28,7 +28,7 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/api/v1/">Blog API</a>
+        <a class="navbar-brand" {# djlint:off #}href="/api/v1/"{# djlint:on #}>Blog API</a>
         {% if user.is_authenticated %}
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
