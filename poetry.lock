@@ -727,6 +727,17 @@ files = [
 ]
 
 [[package]]
+name = "django-types"
+version = "0.18.0"
+description = "Type stubs for Django"
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "django-types-0.18.0.tar.gz", hash = "sha256:b8e2334c810864d7abf11cd3cdb1da3b2015b67e7f1270007e33777ff1bd8654"},
+    {file = "django_types-0.18.0-py3-none-any.whl", hash = "sha256:7c28fefecfddec1fae7a3b7fec74a12862cf45b76fc891b220fbd42ccbc44808"},
+]
+
+[[package]]
 name = "djangorestframework"
 version = "3.14.0"
 description = "Web APIs for Django, made easy."
@@ -740,6 +751,17 @@ files = [
 [package.dependencies]
 django = ">=3.0"
 pytz = "*"
+
+[[package]]
+name = "djangorestframework-types"
+version = "0.8.0"
+description = "Type stubs for Django Rest Framework"
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "djangorestframework-types-0.8.0.tar.gz", hash = "sha256:bed5dc8ce4f3500a4d29632e333262059e2218f2291c88313ce8443c24e50a76"},
+    {file = "djangorestframework_types-0.8.0-py3-none-any.whl", hash = "sha256:5136212ec0df2c11d5ebcf217246f606e68f1d46a770419de84ed676bdab0113"},
+]
 
 [[package]]
 name = "djlint"
@@ -1130,13 +1152,13 @@ files = [
 
 [[package]]
 name = "ipython"
-version = "8.15.0"
+version = "8.16.0"
 description = "IPython: Productive Interactive Computing"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "ipython-8.15.0-py3-none-any.whl", hash = "sha256:45a2c3a529296870a97b7de34eda4a31bee16bc7bf954e07d39abe49caf8f887"},
-    {file = "ipython-8.15.0.tar.gz", hash = "sha256:2baeb5be6949eeebf532150f81746f8333e2ccce02de1c7eedde3f23ed5e9f1e"},
+    {file = "ipython-8.16.0-py3-none-any.whl", hash = "sha256:dba644376826a532e362da945a672865be7efda76ecf999219e6021bda85d702"},
+    {file = "ipython-8.16.0.tar.gz", hash = "sha256:7a1b2e1e6a3ec5baa466163c451335081f31859883889ff0289c6b21f7a095e2"},
 ]
 
 [package.dependencies]
@@ -2662,13 +2684,13 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 
 [[package]]
 name = "wcwidth"
-version = "0.2.6"
+version = "0.2.7"
 description = "Measures the displayed width of unicode strings in a terminal"
 optional = false
 python-versions = "*"
 files = [
-    {file = "wcwidth-0.2.6-py2.py3-none-any.whl", hash = "sha256:795b138f6875577cd91bba52baf9e445cd5118fd32723b460e30a0af30ea230e"},
-    {file = "wcwidth-0.2.6.tar.gz", hash = "sha256:a5220780a404dbe3353789870978e472cfe477761f06ee55077256e509b156d0"},
+    {file = "wcwidth-0.2.7-py2.py3-none-any.whl", hash = "sha256:fabf3e32999d9b0dab7d19d845149f326f04fe29bac67709ee071dbd92640a36"},
+    {file = "wcwidth-0.2.7.tar.gz", hash = "sha256:1b6d30a98ddd5ce9bbdb33658191fd2423fc9da203fe3ef1855407dcb7ee4e26"},
 ]
 
 [[package]]
@@ -2705,4 +2727,4 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "06768652436cf7c2bb4a6d634c43f7a7e188824b78a9c054e38fe42b3654edc7"
+content-hash = "57b5d1a72843f921e2d5efe25fe7c247ccc6098d8d55ea7fb2fe3685e6cff919"
