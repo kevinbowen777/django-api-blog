@@ -1,4 +1,5 @@
 {% load static %}
+{# djlint:off D018 #} <!-- Ignore use of explicit URL -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +29,7 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" {# djlint:off #}href="/api/v1/"{# djlint:on #}>Blog API</a>
+        <a class="navbar-brand" href="/api/v1/">Blog API</a>
         {% if user.is_authenticated %}
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -55,7 +56,7 @@
             </li>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link dropdown-toggle ml-2"
+                <a class="btn btn-outline-light dropdown-toggle"
                    href="#"
                    id="navbarDropdown"
                    role="button"
@@ -154,5 +155,4 @@
     </div>
     <!-- End footer -->
   </body>
-
 </html>
