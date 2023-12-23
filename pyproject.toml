@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-api-blog"
-version = "0.2.0"
+version = "0.3.0"
 description = "A Django REST Framework(DRF) sandbox"
 authors = [
     "Kevin Bowen <kevin.bowen@gmail.com>",
@@ -18,7 +18,7 @@ documentation = "file:///docs/index.rst"
 keywords = ["api", "blog", "django", "djangorestframework", "web-application"]
 
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Web Environment",
     "Environment :: Web Environment",
     "Framework :: Django",
     "Framework :: Django :: 5.0",
@@ -27,11 +27,11 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
 ]
 
 [tool.poetry.dependencies]
@@ -41,7 +41,7 @@ Django = "5.0"
 djangorestframework = "^3.13.1"
 dj-rest-auth = "^5.0"
 django-allauth = ">=0.54.0, < 0.60.0"
-environs = { version = "^9.5.0", extras = ["django"] }
+environs = { version = "^10.0", extras = ["django"] }
 django-extensions = "^3.2"
 PyYAML = "^6.0"
 uritemplate = "^4.1.1"
