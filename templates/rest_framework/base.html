@@ -14,14 +14,14 @@
               content="A blog API built with Django REST Framework" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="robots" content="NONE,NOARCHIVE" />
-      {% endblock %}
+      {% endblock title %}
 
       <title>
         {% block title %}
           {% if name %}{{ name }} –{% endif %}
           Django
           Blog API
-        {% endblock %}
+        {% endblock title %}
       </title>
 
       {% block style %}
@@ -32,31 +32,31 @@
         {% block bootstrap_theme %}
           <link rel="stylesheet" type="text/css" href="{% static "rest_framework/css/bootstrap.min.css" %}" />
           <link rel="stylesheet" type="text/css" href="{% static "rest_framework/css/bootstrap-tweaks.css" %}" />
-        {% endblock %}
+        {% endblock bootstrap_theme %}
 
         <link rel="stylesheet" type="text/css" href="{% static "rest_framework/css/prettify.css" %}" />
         <link rel="stylesheet" type="text/css" href="{% static "rest_framework/css/default.css" %}" />
         {% if code_style %}<style>{{ code_style }}</style>{% endif %}
-      {% endblock %}
+      {% endblock style %}
       <!-- CSS -->
       <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
-    {% endblock %}
+    {% endblock head %}
   </head>
 
   {% block body %}
-    <body class="{% block bodyclass %}{% endblock %}">
+    <body class="{% block bodyclass %}{% endblock bodyclass %}">
 
       <div class="wrapper">
         {% block navbar %}
-          <div class="navbar navbar-static-top {% block bootstrap_navbar_variant %}navbar-inverse{% endblock %}"
+          <div class="navbar navbar-static-top {% block bootstrap_navbar_variant %}navbar-inverse{% endblock bootstrap_navbar_variant %}"
                role="navigation"
                aria-label="{% trans "navbar" %}">
             <div class="container">
               <span>
                 {% block branding %}
                   <a class="navbar-brand" rel="nofollow" href="{% url 'home' %}">Blog API Home</a>
-                {% endblock %}
+                {% endblock branding %}
               </span>
               <ul class="nav navbar-nav pull-right">
                 {% block userlinks %}
@@ -65,11 +65,11 @@
                   {% else %}
                     {% optional_login request %}
                   {% endif %}
-                {% endblock %}
+                {% endblock userlinks %}
               </ul>
             </div>
           </div>
-        {% endblock %}
+        {% endblock navbar %}
 
         <div class="container">
           {% block breadcrumbs %}
@@ -90,7 +90,7 @@
                 {% endblock breadcrumbs_empty %}
               {% endfor %}
             </ul>
-          {% endblock %}
+          {% endblock breadcrumbs %}
 
           <!-- Content -->
           <div id="content" role="main" aria-label="{% trans "content" %}">
@@ -216,7 +216,9 @@
                   <h1>{{ name }}</h1>
                 </div>
                 <div style="float:left">
-                  {% block description %}{{ description }}{% endblock %}
+                  {% block description %}
+                    {{ description }}
+                  {% endblock description %}
                 </div>
 
                 {% if paginator %}
@@ -382,8 +384,8 @@
           $('form').ajaxForm();
         });
         </script>
-      {% endblock %}
+      {% endblock script %}
 
     </body>
-  {% endblock %}
+  {% endblock body %}
 </html>
