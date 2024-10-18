@@ -9,7 +9,7 @@
 
 </div>
 
- - A basic blogging website & API built with Django 5.0.x & Django REST Framework (DRF) 3.13.x
+ - A basic blogging website & API built with Django 5.1.x & Django REST Framework (DRF) 3.13.x
 
 ##### Table of Contents
  - [Features](#features)
@@ -36,7 +36,7 @@
      - [Debug-toolbar](https://pypi.org/project/django-debug-toolbar/) available. See notes in `config/settings.py` for enabling.
      - Examples of using [Factories](https://pypi.org/project/factory-boy/) & [pytest](https://pypi.org/project/pytest/) fixtures in account app testing
      - [shell_plus](https://django-extensions.readthedocs.io/en/latest/shell_plus.html) with [IPython](https://pypi.org/project/ipython/) via [django-extensions](https://pypi.python.org/pypi/django-extensions/) package
-     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.10, 3.11, and 3.12
+     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.10, 3.11, 3.12, 3.13
          - [black](https://pypi.org/project/black/) (`nox -s black`)
          - [Sphinx](https://pypi.org/project/Sphinx/) documentaion generation (`nox -s lint`)
          - linting (`nox -s lint`)
