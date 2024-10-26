@@ -7,7 +7,7 @@ Package Index
    :depth: 1
 
 The following is a list some of the major Python packages being used for
-this `repository <https://github.com/kevinbowen777/django-start/>`__.
+this `repository <https://github.com/kevinbowen777/django-api-blog/>`__.
 For a complete list of packags explicitly added to the project, view the
 ``pyproject.toml`` file. For a list of *all* of the package, see the
 ``requirements.txt`` file.
