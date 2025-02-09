@@ -17,9 +17,7 @@ DEBUG = env.bool("DJANGO_DEBUG", default=False)
 
 ALLOWED_HOSTS = ["django-api-blog.cool", "localhost", "127.0.0.1"]
 
-
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.admindocs",
@@ -88,7 +86,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "config.wsgi.application"
 
-
 # Database
 # Note: Set sqlite/dev URI in .env file
 DATABASES = {
@@ -98,7 +95,7 @@ DATABASES = {
             "DATABASE_URL", default="postgres://postgres@db/postgres"
         ),
         "NAME": env.str("POSTGRES_DB", "postgres"),
-        "USER": env.str("POSTGRES_USER", "fakeuser"),
+        "USER": env.str("POSTGRES_USER", default="fakeuser"),
         "PASSWORD": env.str("POSTGRES_PASSWORD", "password"),
         "HOST": env.str("POSTGRES_HOST", "db"),
         "PORT": env.int("POSTGRES_PORT", "5432"),
@@ -120,7 +117,6 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
-
 
 # Internationalization
 LANGUAGE_CODE = "en-us"
@@ -178,7 +174,7 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend",
 )
 ACCOUNT_USERNAME_REQUIRED = True
-ACCOUNT_AUTHENTICATION_METHOD = "username_email"
+ACCOUNT_LOGIN_METHODS = {"username", "email"}
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 3
 ACCOUNT_EMAIL_REQUIRED = False
 ACCOUNT_EMAIL_VERIFICATION = "optional"
