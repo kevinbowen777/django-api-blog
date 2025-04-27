@@ -4,7 +4,7 @@ import tempfile
 
 import nox
 
-PYTHON_VERSIONS = ["3.13", "3.12", "3.11", "3.10"]
+PYTHON_VERSIONS = ["3.13", "3.12", "3.11"]
 nox.options.sessions = "audit", "lint", "coverage", "tests"
 locations = (
     "accounts",
@@ -88,8 +88,8 @@ def audit(session):
         "pip-audit",
         "--desc",
         "--aliases",
-        "--ignore-vuln",
-        "PYSEC-2025-14",
+        # "--ignore-vuln",
+        # "PYSEC-2025-14",
     )
 
 
