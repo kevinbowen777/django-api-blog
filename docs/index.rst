@@ -1,7 +1,7 @@
 django-api-blog
 ===============
 
-The django-api-blog_ API is built using the Django 5.1.x and Django REST Framework (DRF) 3.15.x and is part of the collection of `Web Framework Projects`_ .
+The django-api-blog_ API is built using the Django 5.2.x and Django REST Framework (DRF) 3.16.x and is part of the collection of `Web Framework Projects`_ .
 
 .. _django-api-blog: https://github.com/kevinbowen777/django-api-blog
 .. _Web Framework Projects: https://github.com/kevinbowen777/web-project-index
