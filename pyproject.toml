@@ -4,12 +4,12 @@ version = "0.3.3"
 description = "A blog web application build with Django REST Framework(DRF)"
 requires-python = ">=3.11.0"
 dependencies = [
-    "Django (==5.2.10)",
+    "Django (==5.2.11)",
     "djangorestframework (>=3.16.0, <3.17.0)",
     "django-allauth (>=65.0, <66.0.0)",
     "environs[django] (>=11.0, <15.0)",
     "dj-rest-auth (>=7.0, <8.0)",
-    "drf-yasg (==1.21.11)",
+    "drf-yasg (==1.21.14)",
     "django-extensions (>=4.1.0, <4.2.0)",
     "whitenoise (>=6.9.0, <7.0.0)",
     "psycopg[binary] (==3.3.2)",
@@ -80,7 +80,7 @@ factory-boy = "3.0.1"
 werkzeug = ">=3.1, <4.0"
 pyopenssl = ">=24.0, <26.0"
 furo = ">=2024.0, <2025.0"
-django-types = ">=0.22.0, <0.23.0"
+django-types = ">=0.23.0, <0.24.0"
 djangorestframework-types = ">=0.9.0, <0.10.0"
 pip-audit = "^2.9.0"
 
