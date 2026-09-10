@@ -27,6 +27,46 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+django-api-blog 0.3.6 (2026-09-10)
+==================================
+
+Contributor-facing changes
+--------------------------
+
+-  (`#608 <https://github.com/kevinbowen777/django-api-blog/issues/608>`_): Initial zizmor remediation. Pin GitHub actions to hashes.
+
+-  (`#611 <https://github.com/kevinbowen777/django-api-blog/issues/611>`_): Update testing to Python 3.14.7, 3.13.15, and 3.12.14
+
+-  (`#611 <https://github.com/kevinbowen777/django-api-blog/issues/611>`_): Update nox to 2026.8.17
+
+-  (`#611 <https://github.com/kevinbowen777/django-api-blog/issues/611>`_): Update django-debug-toolbar to 7.1.1
+
+-  (`#616 <https://github.com/kevinbowen777/django-api-blog/issues/616>`_): Update django-debug-toolbar to 8.0.0
+
+-  (`#616 <https://github.com/kevinbowen777/django-api-blog/issues/616>`_): Update django-allauth to 65.19.2
+
+-  (`#616 <https://github.com/kevinbowen777/django-api-blog/issues/616>`_): Upgrade gunicorn to 26.2.0
+
+-  (`#616 <https://github.com/kevinbowen777/django-api-blog/issues/616>`_): Update djlint to 1.46.1
+
+-  (`#616 <https://github.com/kevinbowen777/django-api-blog/issues/616>`_): Update towncrier to 26.9.0
+
+-  (`#616 <https://github.com/kevinbowen777/django-api-blog/issues/616>`_): Upgrade environs to 15.2.0
+
+-  (`#616 <https://github.com/kevinbowen777/django-api-blog/issues/616>`_): Update psycopg to 3.3.5
+
+-  (`#617 <https://github.com/kevinbowen777/django-api-blog/issues/617>`_): Replace master with main in static gh action
+
+-  (`#618 <https://github.com/kevinbowen777/django-api-blog/issues/618>`_): Upgrade GitHub actions to latest versions
+
+
+New features
+------------
+
+-  (`#616 <https://github.com/kevinbowen777/django-api-blog/issues/616>`_): Upgrade djangorestframework to 3.18.1
+
+-  (`#616 <https://github.com/kevinbowen777/django-api-blog/issues/616>`_): Upgrade Django to 6.1.1
+
 django-api-blog 0.3.5 (2026-08-20)
 ==================================
 
