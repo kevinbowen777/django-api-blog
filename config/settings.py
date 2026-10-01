@@ -98,7 +98,7 @@ DATABASES = {
         "USER": env.str("POSTGRES_USER", default="fakeuser"),
         "PASSWORD": env.str("POSTGRES_PASSWORD", "password"),
         "HOST": env.str("POSTGRES_HOST", "db"),
-        "PORT": env.int("POSTGRES_PORT", "5432"),
+        "PORT": env.int("POSTGRES_PORT", 5432),
     }
 }
 
@@ -169,6 +169,8 @@ SPECTACULAR_SETTINGS = {
     "DESCRIPTION": "A basic demo of Django API functionality using DRF",
     "VERSION": "0.1.0",
 }
+
+SWAGGER_USE_COMPAT_RENDERERS = False
 
 # django-allauth config
 LOGIN_REDIRECT_URL = "home"
