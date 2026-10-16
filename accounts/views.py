@@ -24,13 +24,13 @@ class UserDetailView(LoginRequiredMixin, DetailView):
 
 
 class UserUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
-    fields = [
+    fields = (
         "name",
         "age",
         "bio",
         "country",
         "profile_pic",
-    ]
+    )
     model = User
     success_message = "Your profile was updated successfully."
 
