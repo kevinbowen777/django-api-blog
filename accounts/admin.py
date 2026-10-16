@@ -12,11 +12,11 @@ class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
     model = User
-    list_display = [
+    list_display = (
         "email",
         "username",
         "is_staff",
-    ]
+    )
     """
     fieldsets = UserAdmin.fieldsets
     fieldsets[1][1]["fields"] = fieldsets[1][1]["fields"] + (

@@ -8,8 +8,6 @@ from .serializers import PostSerializer, UserSerializer
 
 
 class PostList(generics.ListCreateAPIView):
-    """ """
-
     """
     Display a list of :model:`posts.Post`
 

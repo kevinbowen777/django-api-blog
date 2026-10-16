@@ -27,6 +27,28 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+django-api-blog 0.3.8 (2026-10-15)
+==================================
+
+Security updated
+----------------
+
+-  (`#624 <https://github.com/kevinbowen777/django-api-blog/issues/624>`_): Update django-allauth to 65.19.7
+
+-  (`#624 <https://github.com/kevinbowen777/django-api-blog/issues/624>`_): Update djangorestframework
+
+-  (`#625 <https://github.com/kevinbowen777/django-api-blog/issues/625>`_): Update Django to 6.1.2
+
+
+Contributor-facing changes
+--------------------------
+
+- : Update ruff rules & fix reported errors
+
+-  (`#624 <https://github.com/kevinbowen777/django-api-blog/issues/624>`_): Update testing for Python 3.14.8, 3.13.16, 3.12.15
+
+-  (`#624 <https://github.com/kevinbowen777/django-api-blog/issues/624>`_): Update djlint to 1.46.4
+
 django-api-blog 0.3.7 (2026-10-01)
 ==================================
 
