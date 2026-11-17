@@ -27,6 +27,34 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+django-api-blog 0.3.10 (2026-11-16)
+===================================
+
+Security updated
+----------------
+
+-  (`#629 <https://github.com/kevinbowen777/django-api-blog/issues/629>`_): Update django-allauth to 65.22.1
+
+-  (`#629 <https://github.com/kevinbowen777/django-api-blog/issues/629>`_): Update psycopg to 3.3.9
+
+-  (`#629 <https://github.com/kevinbowen777/django-api-blog/issues/629>`_): Update pip to 26.3
+
+-  (`#629 <https://github.com/kevinbowen777/django-api-blog/issues/629>`_): Update Django to 6.1.3
+
+
+Contributor-facing changes
+--------------------------
+
+-  (`#629 <https://github.com/kevinbowen777/django-api-blog/issues/629>`_): Update gunicorn to 27.0.1
+
+-  (`#629 <https://github.com/kevinbowen777/django-api-blog/issues/629>`_): Update coverage to 7.17.3
+
+-  (`#629 <https://github.com/kevinbowen777/django-api-blog/issues/629>`_): Update myst-parser to 5.2.0
+
+-  (`#629 <https://github.com/kevinbowen777/django-api-blog/issues/629>`_): Update djlint to 1.52.0
+
+-  (`#630 <https://github.com/kevinbowen777/django-api-blog/issues/630>`_): Upgrade BitBucket remote repo URL
+
 django-api-blog 0.3.9 (2026-11-02)
 ==================================
 
